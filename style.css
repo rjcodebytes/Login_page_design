@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+body{
+    height: 900px;
+    width: 100%;
+    background: url(Images/wallpaperflare.com_wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main{
+    height: 600px;
+    width: 500px;
+    border: none;
+    border-radius: 15px;
+    backdrop-filter: blur(3px);
+    background: rgba(0,0,0,.1);
+    border: 2px solid pink;
+    transition: .6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main:hover{
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 10px 2px white;
+}
+
+
+
+.main form{
+    position: relative;
+    /*border: 2px solid white;*/
+    height: 550px;
+    width: 450px;
+
+}
+
+form h1{
+    position: relative;
+    bottom: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: Lemon;
+    color: #fed4f2;
+    scale: 1.3;
+    animation: updown 2.3s ease-in-out infinite;
+}
+
+@keyframes updown{
+    50%{
+        letter-spacing: 2.5px;
+        scale: 1.4;
+        text-shadow: 2px 2px 10px black;
+    }
+}
+
+
+
+.password{
+    position: relative;
+    top: 30px;
+}
+
+.username label,input{
+    display: block;
+    margin-top: 5px;
+}
+
+
+.username label{
+    position: relative;
+    color: white;
+    font-size: 30px;
+    left: 30px;
+    font-family: Salsa;
+    color: #fed4f2;
+    
+}
+
+.username i , .password i{
+    background: #e68bbe;
+    padding: 10px 10px 10px 10px;
+    border-radius: 50%;
+}
+
+.username input, .password input{
+    position: relative;
+    background: rgba(0,0,0,.3);
+    left: 90px;
+    border: 2px solid #e68bbe;
+    outline: none;
+    height: 40px;
+    width: 220px;
+    border-radius: 60px;
+    padding-left: 50px;
+    color: #fed4f2;
+    font-size: 20px;
+    transition: .6s;
+}
+
+.username input:focus{
+    background: rgba(0,0,0,.5);
+    box-shadow: 0 0 20px #fed4f2;
+}
+
+
+.password input:focus{
+    background: rgba(0,0,0,.5);
+    box-shadow: 0 0 20px #fed4f2;
+}
+
+
+
+.password label,input{
+    margin-top: 10px;
+}
+.password label{
+    position: relative;
+    color: white;
+    font-size: 30px;
+    left: 30px;
+    font-family: Salsa;
+    color: #fed4f2;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 90px;
+}
+
+.submit input{
+    scale: 2;
+    background: none;
+    border: 2px solid #e68bbe;
+    color: #fed4f2;
+    width: 80px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-family: Salsa;
+    border-radius: 40px;
+    transition: .6s;
+}
+
+.submit input:hover{
+    background: rgba(0,0,0,.5);
+    box-shadow: 0 0 20px #fed4f2;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 150px;
+    height: 50px;
+    width: 30px;
+    border: 2px solid white;
+    width: 300px;
+    left: 80px;
+    border-radius: 30px;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+    scale: 1.3;
+    /*background: red;*/
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: .6s;
+}
+
+.links a:hover{
+   background: #e68bbe;
+}
+
+.links i{
+    display: inline;
+    transition: .6s;
+    scale: 1.2;
+    
+}
+
+.links a:nth-child(1):hover i{
+  color:#4267B2;
+}
+
+.links a:nth-child(2):hover i{
+    color:#1DA1F2;
+}
+.links a:nth-child(3):hover i{
+    color:#F4B400;
+}
+.links a:nth-child(4):hover i{
+    color:#7289d9;
+}
+
